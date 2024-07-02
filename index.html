@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chetan Matsya Beej Kendra</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="rohu.webp" alt="Pangasius">
+                <h2>Rohu</h2>
+                <p>₹250 / Kg</p>
+                <button class="add-to-cart" data-price="250">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="nanny.webp" alt="Nanny">
+                <h2>Nanny</h2>
+                <p>₹250 / Kg</p>
+                <button class="add-to-cart" data-price="250">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="silver.jpeg" alt="Silver">
+                <h2>Silver</h2>
+                <p>₹150 / Kg</p>
+                <button class="add-to-cart" data-price="150">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="grass.jpeg" alt="Grass">
+                <h2>Grass</h2>
+                <p>₹180 / Kg</p>
+                <button class="add-to-cart" data-price="180">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="baikhar.png" alt="Jelly">
+                <h2>Pangasius</h2>
+                <p>₹250 / Kg</p>
+                <button class="add-to-cart" data-price="250">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="jelly.jpeg" alt="Rohu">
+                <h2>Jelly</h2>
+                <p>₹500 / Kg</p>
+                <button class="add-to-cart" data-price="500">Add to Cart</button>
+            </div>
+        </section>
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be added dynamically -->
+            </ul>
+            <p>Total: ₹<span id="cart-total">0.00</span></p>
+            <button id="checkout">Checkout</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Chetan Matsya Beej Kendra. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

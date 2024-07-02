@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+}
+
+header {
+    background-color: #00796b;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #004d40;
+    border-radius: 4px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.image-section {
+    text-align: center;
+}
+
+.featured-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.products {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cart {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.cart h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+}
+
+#checkout {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#checkout:hover {
+    background-color: #004d40;
+}
+/* Additional CSS for the login form */
+
+.login-section {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#login-form input, #login-form textarea, #login-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#login-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+#login-form button {
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#login-form button:hover {
+    background-color: #004d40;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #00796b;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
